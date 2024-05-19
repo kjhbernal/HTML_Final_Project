@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MARO's Coffee Shop</title>
+        <style>
+            h1{
+                font-style: italic;
+                display:inline; 
+                font-size: 60px; 
+                line-height:100px;
+            }
+            li{
+                display: inline;    
+            }
+            hr{
+                width:100%;
+                margin: auto;
+            }
+            #menu{
+                background-color: rgb(255, 252, 224);
+            }
+            .menu-item{
+                display: inline-block;
+                margin: 10px;
+            }
+            .menu-item img{
+                width: 300px;
+                height: 280px;
+                float: "left";
+            }
+            #order{
+                background-color: rgb(255, 241, 224);
+            }
+            
+        </style>
+    </head>
+    <body style="background-color: rgb(255,245,225);">
+        <header >
+            <img width=100px
+            id="header-img"
+            align= "left"
+            style="margin-left: 2cm;"
+            src="https://github.com/kjhbernal/Curso_HTML/blob/master/Coffee_Shop_Logo.png?raw=true"
+            alt="MARO's Coffee Shop logo" >
+            <center>
+            <h1>MARO's Coffee Shop</h1>
+            <hr>
+            <nav>
+                <ul>
+                    <li><a class="sections" href= #menu >Menu</a></li> |
+                    <li><a class="sections" href= #order >Order</a></li>
+                </ul>
+            </nav>
+            </center>
+            <hr>
+        </header>
+        <main>
+            <div class="sections" id="menu">
+                <br>
+                <center>
+                <h2> MENU </h2>
+                <br>
+                <div class="menu-item">
+                    <img 
+                    id="caramel-latte"
+                    src="https://www.splenda.com/wp-content/uploads/2023/09/iced-salted-caramel-latte-thumb.jpg"
+                    alt="Caramel Latte"
+                    > 
+                    <p>
+                        <h3>Caramel Latte</h3>
+                        Delicious Caramel Latte, can be either <br>Iced or Hot. <br>
+                        <i>$5.99</i>
+                    </p>               
+                </div>
+                <div class="menu-item">
+                    <img 
+                    id="americano"
+                    src="https://majestycoffee.com/cdn/shop/articles/americano_misto_800x.jpg?v=1684064972"
+                    alt="Americano Coffee"
+                    >
+                    <p>
+                        <h3>Americano</h3>
+                        Americano Coffee, <br>you can add milk if desired. <br>
+                        <i>$3.99</i>
+                    </p>
+                </div>
+                <div class="menu-item">
+                    <img
+                    id="vanilla-late"
+                    src="https://images.ctfassets.net/v601h1fyjgba/7wGcWZgV7yaSLXrodALIuw/2496353e1ec8c39dd44adfb45e8335d3/Vanilla_Latte.jpg"
+                    alt="Vanilla Latte"
+                    >
+                    <p>
+                        <h3>Vanilla Latte</h3>
+                        Vanilla Latte with foam, can be either <br>Iced or Hot. <br>
+                        <i>$4.99</i>
+                    </p>
+                </div>
+                <br>
+                <div class="menu-item">
+                    <img 
+                    id="blueberry-muffin"
+                    src="https://www.ambitiouskitchen.com/wp-content/uploads/fly-images/44547/blueberrymuffins-4-500x500-c.jpg"
+                    alt="Blueberry Muffin"
+                    >
+                    <p>
+                        <h3>Blueberry Muffin</h3>
+                        Daily baked Blueberry Muffin. <br>
+                        Ask for an extra crispy top if desired. <br>
+                        <i>$5.99</i>
+                    </p>
+                </div>
+                <div class="menu-item">
+                    <img 
+                    src="https://www.jocooks.com/wp-content/uploads/2018/11/cheesecake-1-22.jpg"
+                    alt="Cheescake"
+                    >
+                    <p>
+                        <h3>Strawberry Cheesecake</h3>
+                        Delicious slice of New York Style Cheescake <br>
+                        with a topping of strawberry compote. <br>
+                        <i>$6.99</i>
+                    </p>
+                </div>
+                <div class="menu-item">
+                    <img
+                    id="blueberry-pie"
+                    src="https://handletheheat.com/wp-content/uploads/2021/06/how-to-make-blueberry-pie-SQUARE.jpg"
+                    alt="Blueberry Pie"
+                    >
+                    <h3>Blueberry Pie</h3>
+                    Homemade Blueberry Pie with a scoop of <br>
+                    vanilla ice cream. <br>
+                    <i>$6.99</i>
+                </div>
+                </center>
+            </div>
+            <div class="sections" id="order">
+                <hr style="width: 80%;"
+                <br>
+                <h2 align="center">PLACE YOUR ORDER</h2>
+                <br>
+                <form action=""
+                method="get" style="margin-left: 35%;">
+                <label for="name">Name: </label>
+                <input type="text" maxlength= 40 required> 
+                <br><br>
+                <label for="number">Phone number: </label>
+                <input type="tel" placeholder=" (123) 456-7890" maxlength="13" required>
+                <br><br>
+                <label for="email">Email: </label>
+                <input type="email" required>
+                <br><br>
+                <label for="products">What would you like to order?</label>
+                <ul>
+                    <li><input type="checkbox">Caramel Latte | Qty: <input type="number" min=0 max=30></li><br>
+                    <ul style="display: inline;">
+                        <li><input type="radio" name="temp-cl">Hot</li>
+                        <li><input type="radio" name="temp-cl">Iced</li>
+                    </ul>
+                    <br><br>
+                    <li><input type="checkbox">Americano | Qty: <input type="number" min=0 max=30></li><br>
+                    <ul style="display: inline;">
+                        <li><input type="radio" name="temp-a">Hot</li>
+                        <li><input type="radio" name="temp-a">Iced</li>
+                        <li><input type="checkbox">Add milk</li>
+                    </ul>
+                    <br><br>
+                    <li><input type="checkbox">Vanilla Latte | Qty: <input type="number" min=0 max=30></li><br>
+                    <ul style="display: inline;">
+                        <li><input type="radio" name="temp-vl">Hot</li>
+                        <li><input type="radio" name="temp-vl">Iced</li>
+                    </ul>
+                    <br><br>
+                    <li><input type="checkbox">Blueberry Muffin | Qty: <input type="number" min=0 max=30></li><br>
+                    <ul style="display: inline;">
+                        <li><input type="radio" name="temp-bm">Normal</li>
+                        <li><input type="radio" name="temp-bm">Heated</li>
+                        <li><input type="radio" name="temp-bm">Crispy</li>
+                        <li><input type="radio" name="temp-bm">Extra Crispy</li>
+                    </ul>
+                    <br><br>
+                    <li><input type="checkbox">Strawberry Cheesecake | Qty: <input type="number" min=0 max=30></li>
+                    <br><br>
+                    <li><input type="checkbox">Blueberry Pie | Qty: <input type="number" min=0 max=30></li><br>
+                </ul> 
+                <label for="extrareq">Do you have any extra requests for any of your items?</label><br>
+                <textarea id="extrareq" 
+                rows= 8
+                cols= 50
+                placeholder='Special requests go here. If you have none, please place "NA".'
+                required></textarea> 
+                <br><br>
+                <p style="margin-left: -50%;" align="center">
+                <b>For large orders only (more than 10 items): </b><br>
+                <label for="putime">What is your desired time for pickup?</label>
+                <input type="time"> 
+                <br>
+                <b>Note: </b>To confirm order based on desired pickup time, you will recieve an email confirmation. 
+                <br>Otherwise, we may contact you for further coordination. 
+                <br><br>
+                <input type="submit" value="Go To Checkout">
+                </p>
+                </form>
+                <br>
+            </div>
+        </main>
+        <footer align="center">
+            <hr>
+            <br>
+            <p>
+                Made with love by @kjhbernal ❤.
+            </p>
+            <br>
+        </footer>
+    </body>
+</html>
